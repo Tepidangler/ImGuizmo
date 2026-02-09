@@ -1,5 +1,9 @@
 project(ImGuizmo)
 
+include_directories(BEFORE
+                    "${ImGUI_SOURCE_DIR}"
+                    )
+
 add_library(ImGuizmo STATIC
         ImGuizmo.h
         ImSequencer.cpp
@@ -13,6 +17,7 @@ add_library(ImGuizmo STATIC
         ImGradient.h
         ImGuizmo.cpp
 )
+
 
 
 
