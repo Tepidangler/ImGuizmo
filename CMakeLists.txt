@@ -18,6 +18,9 @@ add_library(ImGuizmo STATIC
         ImGuizmo.cpp
 )
 
+set_property(TARGET ImGuizmo PROPERTY
+        MSVC_RUNTIME_LIBRARY "MultiThreaded$<$<CONFIG:Debug>:Debug>")
+
 
 
 
